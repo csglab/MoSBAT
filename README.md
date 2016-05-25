@@ -19,7 +19,6 @@ in vitro binding preferences for pairs of TFs.
 1. To install the program, extract the package
 2. Change directory: `cd MoSBAT/` 
 3. Make MoSBAT: `make`
-3. Generate a large library of random sequences (GC content: 50%): `bash ./src/_seq/_generate.sh > ./src/_seq/sequences.random.txt`
 4. To test the pipeline, execute this command: 
 
 >
