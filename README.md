@@ -25,8 +25,8 @@ in vitro binding preferences for pairs of TFs.
 >
     bash MoSBAT.sh MyTestJob \
     examples/RNACompete/RNACompete.part1.pfm.txt \
-    examples/RNACompete/RNACompete.part1.pfm.txt rna 20 5000
-This should create a “./out/MyTestJob” folder, with the MoSBAT output files described above.
+    examples/RNACompete/RNACompete.part2.pfm.txt rna 20 5000
+This should create a “./out/MyTestJob” folder, with the MoSBAT output files described below.
 
 ## Usage
 Use the MoSBAT.sh script to run RCADE on your dataset:
@@ -41,3 +41,11 @@ Use the MoSBAT.sh script to run RCADE on your dataset:
 `<num_seqs> = 50000`
 MoSBAT-e score variances are relatively stable for anything over 50,000 sequences. When 
 using MoSBAT-a with long sequences we recommend >100,000 random sequences
+
+## Output
+*To be continued*
+
+## Advanced Usage Notes
+### Using user-specified backgrounds
+
+### Calculating p-values for motif similarities 
