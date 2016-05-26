@@ -1,13 +1,13 @@
 # MoSBAT
 
-## Motif Similarity Based on Affinity of Targets
+### Motif Similarity Based on Affinity of Targets
 
 Measuring motif similarity is essential for identifying functionally related transcription factors (TFs) and RNA-binding proteins (RBPs), and for annotating de novo motifs. Here, we describe Motif Similarity Based on Affinity of Targets (MoSBAT), an approach for measuring the similarity of motifs by computing their affinity profiles across a large number of random sequences. We show that MoSBAT successfully associates de novo ChIP-seq motifs with their respective TFs, accurately identifies motifs that are obtained from the same TF in different in vitro assays, and quantitatively reflects the similarity of in vitro binding preferences for pairs of TFs. 
 
 ## Requirements 
 - Unix-compatible OS
 - R version 3.0.1 or later [Download](http://www.r-project.org/) 
-- R “gplots” library [Download](https://cran.r-project.org/web/packages/gplots/index.html)
+- R “gplots” library [CRAN](https://cran.r-project.org/web/packages/gplots/index.html)
 
 ## Installation 
 1. To install the program, extract the package
@@ -22,7 +22,7 @@ Measuring motif similarity is essential for identifying functionally related tra
 This should create a “./out/MyTestJob” folder, with the MoSBAT output files described below.
 
 ## Running MoSBAT
-### Motif File Specifications
+### Motif file specifications
 To compare your motifs using MoSBAT you will need a CIS-BP formatted position frequency matrix (PFM) file.  Each motif should include the following lines:
 
 
@@ -36,7 +36,8 @@ To compare your motifs using MoSBAT you will need a CIS-BP formatted position fr
 
 ###Usage
 Use the MoSBAT.sh script to run RCADE on your dataset:
-`bash MoSBAT.sh <job_name> <PFM_file_1> <PFM_file_2> <motif_type> <seq_length> <num_seqs>`
+
+    bash MoSBAT.sh <job_name> <PFM_file_1> <PFM_file_2> <motif_type> <seq_length> <num_seqs>
 
 **Recommended settings:**
 
