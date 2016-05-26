@@ -21,6 +21,13 @@
 
 args <- commandArgs(trailingOnly = TRUE)
 
+############### define mode function 
+
+findmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
 ############### read affinities and write correlations
 
 set1 <- read.csv(paste("./out/",args[1],"/results.set1.position.txt",sep=""),sep="\t")
@@ -43,16 +50,15 @@ for( i in 1:n )
 		
 	jpeg(file=paste("./out/",args[1],"/results.",args[2],".",i,".position.histogram.jpg",sep=""),width=600,height=100)
 	par(mfrow=c(1,2),mar=c(2,2,1,1))
-
-	if( sum(filter)>0 )
+	if( sum(filter)>0 ){
 		hist(forward,breaks=seq(min(forward)-0.5,max(forward)+0.5,by=1),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",col=rgb(1,0,0))
-	else
-		hist(1000,breaks=c(999,1001),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",col=rgb(1,0,0))
+		mtext(paste("Most Frequent Offset:", findmode(forward), sep = ' '))
+	} else{hist(1000,breaks=c(999,1001),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",col=rgb(1,0,0))}
 
-	if( sum(!filter)>0 )
+	if( sum(!filter)>0 ){
 		hist(reverse,breaks=seq(min(reverse)-0.5,max(reverse)+0.5,by=1),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",ylab="",col=rgb(0,0,1))
-	else
-		hist(1000,breaks=c(999,1001),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",ylab="",col=rgb(0,0,1))
+		mtext(paste("Most Frequent Offset:", findmode(reverse), sep = ' '))
+	} else{ hist(1000,breaks=c(999,1001),xlim=c(-20,20),ylim=c(0,maxy),freq=T,main="",ylab="",col=rgb(0,0,1))}
 
 	dev.off()
 }
