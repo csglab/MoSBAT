@@ -101,6 +101,7 @@ cat $seq_template | head -n $num | awk -v l=$length '{ printf(">seq_%i\n%s\n",NR
 ####################### define the output path
 out_folder="./out/"$jobid
 mkdir -p $out_folder
+mkdir -p $out_folder"/hist"
 out_file=$out_folder"/results"
 
 ####################### define log files

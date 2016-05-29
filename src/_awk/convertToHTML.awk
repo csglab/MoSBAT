@@ -18,7 +18,7 @@
 			printf("<td>%s</td>\n",$2);
 		printf("<td>%0.2f</td>\n",$3);
 		if(count<=100)
-			printf("<td><a href=\"results.%s.%i.position.histogram.jpg\" target=\"_blank\"><img src=\"results.%s.%i.position.histogram.jpg\" alt=\"Alignment offset histogram\" style=\"width:330px;height:55px;\"></a></td>\n",type,count,type,count);
+			printf("<td><a href=\"hist/results.%s.%i.position.histogram.jpg\" target=\"_blank\"><img src=\"hist/results.%s.%i.position.histogram.jpg\" alt=\"Alignment offset histogram\" style=\"width:330px;height:55px;\"></a></td>\n",type,count,type,count);
 		else
 			printf("<td></td>\n");
 		printf("</tr>\n");
