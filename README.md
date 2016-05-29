@@ -43,7 +43,7 @@ Use the MoSBAT.sh script to run MoSBAT on your dataset:
 
 `<job_name>`: Name of output folder. Results and error logs are written to `out/<job_name>`
 
-`<PFM_file_1>` and `<PFM_file_2>`: Locations of CIS-BP formatted PFM files that you're comparing
+`<PFM_file_1>` and `<PFM_file_2>`: Locations of CIS-BP formatted PFM files that you are comparing. Note that you can use `null` as `<PFM_file_2>`, in which case `<PFM_file_1>` will be compared to a built-in database of RNA/DNA motifs.
 
 `<motif_type>`[`rna` or `dna`]: Whether the motifs you're comparing are **RNA** motifs (score in forward direction), or **DNA** motifs (score in forward and reverse directions)
 
