@@ -2,7 +2,7 @@ MAKE = make		#change this line if you are using a different GNU make software
 
 dirSeq = ./src/_seq
 dirDB = ./src/_motifdb
-dirAffiMx = ./src/AffiMx
+dirAffiMx = ./src/affimx
 
 all: Extract MK_dir CC_AffiMx RM_objectFiles
 
