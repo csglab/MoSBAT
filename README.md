@@ -80,4 +80,4 @@ MoSBAT does not calculate the significance of motif similarities but it can be g
 Next, run MoSBAT using the background motif collection, and use the generated set of MoSBAT-a and MoSBAT-e scores as the background (null) distribution to calculate the *p*-values for other motif pairs.
 
 ## Citation
-Lambert SA, Albu M, Hughes TR, Najafabadi HS. Motif comparison based on similarity of binding affinity profiles. Bioinformatics 2016, doi:10.1093/bioinformatics/btw489
+Lambert SA, Albu M, Hughes TR, Najafabadi HS. Motif comparison based on similarity of binding affinity profiles. Bioinformatics 2016, [doi:10.1093/bioinformatics/btw489](http://bioinformatics.oxfordjournals.org/content/early/2016/07/27/bioinformatics.btw489)
