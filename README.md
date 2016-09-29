@@ -78,3 +78,6 @@ Changes to the random sequences that MoSBAT uses can be done by editing the `seq
 MoSBAT does not calculate the significance of motif similarities but it can be generated using the outputs from the tool. First a large collection of random motifs needs to be created as a background. One way is to generate a large random set of motifs with similar characteristics to your query using the method of Sandelin and Wasserman [(2004)](http://www.ncbi.nlm.nih.gov/pubmed/15066426). The `-genrand` function to make your random set of motifs implemented in the [STAMP](https://github.com/shaunmahony/stamp) toolkit by Mahony, Auron, and Benos [(2007)](http://www.ncbi.nlm.nih.gov/pubmed/17397256) can be used to do this. 
 
 Next, run MoSBAT using the background motif collection, and use the generated set of MoSBAT-a and MoSBAT-e scores as the background (null) distribution to calculate the *p*-values for other motif pairs.
+
+## Citation
+Lambert SA, Albu M, Hughes TR, Najafabadi HS. Motif comparison based on similarity of binding affinity profiles. Bioinformatics 2016, doi:10.1093/bioinformatics/btw489
